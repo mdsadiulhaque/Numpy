@@ -49,3 +49,12 @@ print(x1[-2])
 print(x2 = np.random.randint(10, size=(3,4)))
 print(x2)
 
+#1st row and 2nd column value
+print(x2[2,3])
+
+#3rd row and last value from the 3rd column
+print(x2[2,-1])
+
+#replace value at 0,0 index
+print(x2[0,0] = 12)
+print(x2)
