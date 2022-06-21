@@ -127,12 +127,31 @@ print (upper, lower)
 dimensional array, if you want to create 2-Dimensional or 3-Dimensional matrices, you can use np.reshape ( ) with
 """
 
-np.arange(start=None, stop=None, step=None, dtype=None)
+"""np.arange(start=None, stop=None, step=None, dtype=None)
 np.arange ( )
 np.arange(0, 10, 3)
 array([0, 3, 6, 9])
 
-print(np.arange(0, 10, 3))
+print(np.arange(0, 10, 3))"""
+
+#Create an evenly spaced array between 1 and 60 with a difference of 2.
+dif=np.arange(1,60,2)
+print(dif)
+
+#Reshape the above array into a desired shape.
+print(dif.reshape(10,3))
+
+"""Generate an evenly spaced list between the interval 1 and 8. (Take a minute here to understand the difference
+between ‘linspace’ and ‘arange’)"""
+gen = np.linspace(1,8,40)
+print(gen)
+
+#Now, change the shape of the array in place (‘resize’ function changes the shape of the array in place, unlike ‘reshape’)
+gen.resize(10,4)
+print(gen)
+
+
+
 
 
 
